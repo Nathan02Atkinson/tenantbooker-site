@@ -12,7 +12,7 @@ img { max-width: 100%; display: block; }
 /* Navbar */
 .nav { backdrop-filter: blur(8px); position: sticky; top: 0; z-index: 100; }
 .nav__inner { display: flex; align-items: center; justify-content: space-between; padding: 1.1rem 0; }
-.nav__logo { height: 44px; }
+.nav__logo { height: 88px; }
 .nav__links a { margin-left: 2rem; color: #eaf2f9; text-decoration: none; font-weight: 600; }
 .nav__burger { display: none; font-size: 1.8rem; background: none; border: none; color: #eaf2f9; }
 
