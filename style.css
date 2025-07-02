@@ -1,0 +1,53 @@
+/* Reset & base */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #eaf2f9; background: #01233f; }
+img { max-width: 100%; display: block; }
+.container { width: min(90%, 1100px); margin-inline: auto; }
+
+/* Buttons */
+.btn { display: inline-block; padding: 0.9rem 2rem; border-radius: 6px; text-decoration: none; font-weight: 600; }
+.btn--primary { background: #00a7ff; color: #fff; transition: background 0.2s; }
+.btn--primary:hover { background: #008dde; }
+
+/* Navbar */
+.nav { backdrop-filter: blur(8px); position: sticky; top: 0; z-index: 100; }
+.nav__inner { display: flex; align-items: center; justify-content: space-between; padding: 1.1rem 0; }
+.nav__logo { height: 44px; }
+.nav__links a { margin-left: 2rem; color: #eaf2f9; text-decoration: none; font-weight: 600; }
+.nav__burger { display: none; font-size: 1.8rem; background: none; border: none; color: #eaf2f9; }
+
+/* Hero */
+.hero { text-align: center; padding: 7rem 0 6rem; background: linear-gradient(135deg, #013761 0%, #01233f 60%); }
+.hero h1 { font-size: clamp(2.2rem, 5.5vw, 3.5rem); margin-bottom: 1.2rem; }
+.hero p { max-width: 38rem; margin-inline: auto 2rem; margin-bottom: 2.2rem; font-size: 1.1rem; }
+
+/* Sections */
+.section-heading { font-size: 2rem; text-align: center; margin-bottom: 3rem; }
+
+.features { padding: 5rem 0; }
+.features__grid { display: grid; gap: 2.5rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.feature h3 { margin-bottom: 0.6rem; color: #00a7ff; }
+.feature p { font-size: 0.95rem; }
+
+.about { background: #011b32; padding: 5rem 0; }
+.about__inner { display: flex; flex-wrap: wrap; gap: 3rem; align-items: center; }
+.about__text { flex: 2 1 340px; }
+.about__logo { flex: 1 1 200px; }
+
+.cta { padding: 4.5rem 0; text-align: center; background: #00a7ff; }
+.cta h2 { margin-bottom: 1.5rem; color: #01233f; }
+
+.contact { padding: 5rem 0; }
+.contact__form { display: grid; gap: 1.4rem; max-width: 540px; margin-inline: auto; }
+.contact__form input, .contact__form textarea { padding: 0.9rem; border: none; border-radius: 6px; }
+.contact__form input:focus, .contact__form textarea:focus { outline: 2px solid #00a7ff; }
+
+.footer { padding: 2rem 0; font-size: 0.9rem; text-align: center; background: #011b32; }
+
+/* Mobile nav */
+@media (max-width: 768px) {
+  .nav__links { position: fixed; inset: 0 0 0 30%; background: #01233f; padding-top: 5rem;
+                flex-direction: column; gap: 1.5rem; transform: translateX(100%); transition: transform 0.3s; }
+  .nav__links.open { transform: translateX(0); }
+  .nav__burger { display: block; }
+}

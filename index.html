@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TenantBooker – Artificial Intelligence</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ==========   NAVBAR   ========== -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <img src="img/tenantbooker-logo.png" alt="TenantBooker Logo" class="nav__logo" />
+      <nav class="nav__links">
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="burger" class="nav__burger" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <!-- ==========   HERO   ========== -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <h1>Smarter Viewing Bookings<br>for Student Lettings</h1>
+      <p>TenantBooker uses <strong>artificial intelligence</strong> to turn
+         every enquiry into a confirmed viewing—automatically.</p>
+      <a href="#contact" class="btn btn--primary">Book a Demo</a>
+    </div>
+  </section>
+
+  <!-- ==========   FEATURES   ========== -->
+  <section id="features" class="features">
+    <div class="container">
+      <h2 class="section-heading">Why TenantBooker?</h2>
+      <div class="features__grid">
+        <div class="feature">
+          <h3>24‑7 AI Chatbot</h3>
+          <p>Answers questions and books viewings on web, WhatsApp & Instagram DM.</p>
+        </div>
+        <div class="feature">
+          <h3>Calendar Sync</h3>
+          <p>No double‑booking. Two‑way integration with Outlook or Google Calendar.</p>
+        </div>
+        <div class="feature">
+          <h3>No‑Show Cut by 30 %</h3>
+          <p>Automatic SMS & email reminders boost attendance and conversion.</p>
+        </div>
+        <div class="feature">
+          <h3>Actionable Analytics</h3>
+          <p>See enquiry sources, lead‑to‑let cycle time, and occupancy forecasts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========   ABOUT   ========== -->
+  <section id="about" class="about">
+    <div class="container about__inner">
+      <div class="about__text">
+        <h2 class="section-heading">Built for Student‑Letting Teams</h2>
+        <p>
+          We’ve spent years inside student accommodation offices and know the
+          <em>January rush</em> pain. TenantBooker automates the admin so your
+          negotiators focus on closing lets, not chasing emails.
+        </p>
+        <ul>
+          <li>GDPR‑ready UK data hosting</li>
+          <li>Works with LetMC, Reapit & most PMS exports</li>
+          <li>Simple monthly subscription—cancel anytime</li>
+        </ul>
+      </div>
+      <img src="img/tenantbooker-logo.png" alt="TenantBooker icon" class="about__logo">
+    </div>
+  </section>
+
+  <!-- ==========   CTA   ========== -->
+  <section class="cta">
+    <div class="container cta__inner">
+      <h2>Ready to fill your viewing diary?</h2>
+      <a href="#contact" class="btn btn--primary">Get Started</a>
+    </div>
+  </section>
+
+  <!-- ==========   CONTACT   ========== -->
+  <section id="contact" class="contact">
+    <div class="container contact__inner">
+      <h2 class="section-heading">Contact Us</h2>
+      <form action="https://formspree.io/f/your-id" method="POST" class="contact__form">
+        <input type="text" name="name" placeholder="Your name" required />
+        <input type="email" name="email" placeholder="Work email" required />
+        <textarea name="message" rows="4" placeholder="Tell us about your letting agency…"></textarea>
+        <button type="submit" class="btn btn--primary">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2025 TenantBooker – Artificial Intelligence</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
